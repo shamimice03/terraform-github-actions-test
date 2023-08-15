@@ -1,6 +1,6 @@
-name: Pre-commit min version
+name:  Pre-Commit Min Version
 on:
- push:
+ #push:
  workflow_dispatch:
  
 env:

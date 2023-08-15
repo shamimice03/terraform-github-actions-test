@@ -1,6 +1,6 @@
 # https://github.com/clowdhaus/terraform-composite-actions#directories
 
-name: minMax
+name: Min and Max Version
 on:
  #push:
  workflow_dispatch:

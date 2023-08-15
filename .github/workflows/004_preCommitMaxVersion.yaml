@@ -1,4 +1,4 @@
-name: Pre-Commit
+name: Pre-Commit Max Version
 
 on:
  push:
