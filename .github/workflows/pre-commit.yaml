@@ -21,8 +21,9 @@ jobs:
     runs-on: ubuntu-latest
     env:
      INPUTS: ${{ needs.collectInputs.outputs.directories}}
-      
-    run: |
-      echo $INPUTS
+    steps:
+    - name: view_output
+      run: |
+        echo $INPUTS
      
 
