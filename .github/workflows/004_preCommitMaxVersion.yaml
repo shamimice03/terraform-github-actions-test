@@ -47,5 +47,5 @@ jobs:
              terraform-version: ${{ steps.minMax.outputs.maxVersion }}
              tflint-version: ${{ env.TFLINT_VERSION }}
              terraform-docs-version: ${{ env.TERRAFORM_DOCS_VERSION }}
-             #install-hcledit: true
+             install-hcledit: true
              args: '--files $(ls *.tf)'
