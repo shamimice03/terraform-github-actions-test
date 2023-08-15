@@ -7,7 +7,7 @@ variable "vpc_name" {
 variable "cidr" {
   description = "CIDR Block of the VPC"
   type        = string
-  default     = ""
+  default     = "10.0.0.0/16"
 }
 
 variable "enable_dns_hostnames" {
