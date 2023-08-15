@@ -46,6 +46,13 @@ jobs:
            with:
              terraform-version: ${{ steps.minMax.outputs.maxVersion }}
              tflint-version: ${{ env.TFLINT_VERSION }}
-             terraform-docs-version: ${{ env.TERRAFORM_DOCS_VERSION }}
-             install-hcledit: true
+            # terraform-docs-version: ${{ env.TERRAFORM_DOCS_VERSION }}
+            # install-hcledit: true
              args: '--files $(ls *.tf)'
+                  - name: Pre-commit Terraform ${{ steps.minMax.outputs.maxVersion }}
+                  
+         - name: docs
+           uses: clowdhaus/terraform-composite-actions/pre-commit@v1.8.3
+           with:
+             terraform-version: ${{ steps.minMax.outputs.maxVersion }}
+             terraform-docs-version: ${{ env.TERRAFORM_DOCS_VERSION }}
