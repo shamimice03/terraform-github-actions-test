@@ -1,7 +1,7 @@
 variable "instance_type" {
   description = "Instance Type"
   type        = string
-  default     = "t3.micro"
+  default     = "t3.small"
 }
 
 # variable "key_name" {
