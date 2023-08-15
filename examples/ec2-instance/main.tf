@@ -1,7 +1,7 @@
 module "vpc" {
   source = "../../"
 
-  vpc_name = "webapp_dev_vpc"
+  vpc_name = "webapp_dev_vpc_1"
   cidr     = "192.168.0.0/16"
 
   azs                 = ["ap-northeast-1a", "ap-northeast-1c", "ap-northeast-1d"]
