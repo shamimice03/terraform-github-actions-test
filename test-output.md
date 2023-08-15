@@ -1,8 +1,7 @@
-### pre-commit installation on `amazon-linux`
+## pre-commit installation on `amazon-linux`
 ```bash
-# check version - must be python3
-python -V
-
+# check version - must be python3 
+ python -V
 # Python 3.7.16
 ```
 
@@ -21,34 +20,35 @@ curl -L "$(curl -s https://api.github.com/repos/minamijoyo/tfupdate/releases/lat
 curl -L "$(curl -s https://api.github.com/repos/minamijoyo/hcledit/releases/latest | grep -o -E -m 1 "https://.+?_linux_amd64.tar.gz")" > hcledit.tar.gz && tar -xzf hcledit.tar.gz hcledit && rm hcledit.tar.gz && sudo mv hcledit /usr/bin/
 ```
 
-### Run `pre-commit`
+#### Run `pre-commit on local machine
 ```bash
 pre-commit run -a
 ```
-# ref: https://github.com/antonbabenko/pre-commit-terraform#how-to-install
+
+> Ref: https://github.com/antonbabenko/pre-commit-terraform#how-to-install
 
 ***
 
-### 001_directories.yaml
+## 001_directories.yaml
 The clowdhaus/terraform-composite-actions/directories action will return a list of directories that contain a versions.tf, 
 where the presence of a versions.tf file is loosely representative of a Terraform project root directory. 
 This is useful for running a set of commands in each Terraform root directory under a given project.
 - link: https://github.com/clowdhaus/terraform-composite-actions#directories
 
-### 002_minMax.yaml
+## 002_minMax.yaml
 GitHub action used to evaluate the Terraform minimum and maximum versions permitted
 - link: https://github.com/clowdhaus/terraform-min-max
 
-### 003_preCommitMinVersion.yaml
+## 003_preCommitMinVersion.yaml
 The `clowdhaus/terraform-composite-actions/pre-commit` action will install the following tools which are intended to support 
 the `pre-commit` hooks used within Terraform modules:
 - https://github.com/clowdhaus/terraform-composite-actions#pre-commit
 - https://github.com/antonbabenko/pre-commit-terraform#terraform_tflint
 
-### 004_preCommitMaxVersion.yaml
+## 004_preCommitMaxVersion.yaml
 Before executing we need to run pre-commit in local machine: `.pre-commit-config.yaml` needed
 
-##### `Terraform-docs`
+#### Note: `Terraform-docs`:
 In `README.md` file following line must be added: 
 
 ```bash
@@ -56,20 +56,21 @@ In `README.md` file following line must be added:
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ```
-Ref: https://github.com/antonbabenko/pre-commit-terraform#terraform_docs
+
+> Ref: https://github.com/antonbabenko/pre-commit-terraform#terraform_docs
 
 
 ```bash
 pre-commit run -a
 ```
 
-##### Target:
+#### Target:
 Terraform fmt............................................................Passed
 Terraform validate.......................................................Passed
 Terraform docs...........................................................Passed
 Terraform validate with tflint...........................................Passed
 check for merge conflicts................................................Passed
 
-Link: 
+#### Link: 
 - https://github.com/pre-commit/pre-commit-hooks
 - https://github.com/antonbabenko/pre-commit-terraform
