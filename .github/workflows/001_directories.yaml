@@ -2,7 +2,8 @@
 
 name: directories
 on:
- push:
+ #push:
+ workflow_dispatch:
 
 jobs:
   collectInputs:

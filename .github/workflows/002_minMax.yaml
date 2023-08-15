@@ -25,6 +25,9 @@ jobs:
     strategy:
       matrix:
         directory: ${{ fromJson(needs.collectInputs.outputs.directories) }}
+    outputs:
+      minVersion: ${{ steps.minMax.outputs.minVersion }}
+      maxVersion: ${{ steps.minMax.outputs.maxVersion }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -34,6 +37,7 @@ jobs:
         uses: clowdhaus/terraform-min-max@v1.2.4
         with:
           directory: ${{ matrix.directory }}
-    outputs:
-      minVersion: ${{ steps.minMax.outputs.minVersion }}
-      maxVersion: ${{ steps.minMax.outputs.maxVersion }}
+     - name: Outputs
+        run: |
+         echo "${{ steps.minMax.outputs.minVersion }}"
+         echo "${{ steps.minMax.outputs.maxVersion }}"
