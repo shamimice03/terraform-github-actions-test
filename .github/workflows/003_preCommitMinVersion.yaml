@@ -56,4 +56,4 @@ jobs:
         with:
           terraform-version: ${{ steps.minMax.outputs.minVersion }}
           tflint-version: ${{ env.TFLINT_VERSION }}
-          args: 'terraform_validate --color=always --show-diff-on-failure --files $(ls *.tf)'
+          args: 'terraform_validate --color=always --tf-init-args=-upgrade --show-diff-on-failure --files $(ls *.tf)'
