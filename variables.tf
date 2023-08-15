@@ -36,13 +36,6 @@ variable "enable_single_nat_gateway" {
 #   default = ["ap-northeast-1a", "ap-northeast-1d"]
 # }
 
-# variable "public_subnets_cidr" {
-#   description = "Mapping AZ and Public subnets"
-#   type        = list
-#   default = ["10.0.0.0/20", "10.0.16.0/20"]
-# }
-
-
 variable "azs" {
   description = "List of AZs"
   type        = list(any)
