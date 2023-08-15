@@ -17,7 +17,7 @@ module "vpc" {
 
     enable_dns_hostnames      = true
     enable_dns_support        = true
-    enable_single_nat_gateway = false
+    enable_single_nat_gateway = true
 
     tags = {
       "Team" = "platform-team"
