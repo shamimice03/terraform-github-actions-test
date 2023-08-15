@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+### [0.0.5](https://github.com/shamimice03/terraform-github-actions-test/compare/v0.0.4...v0.0.5) (2023-08-15)
+
+
+### Bug Fixes
+
+* **vpc:** fixed vpc name ([5c672f2](https://github.com/shamimice03/terraform-github-actions-test/commit/5c672f2fb463745ebe7d822c637c4b941f6bd0ce))
+
 ### [0.0.4](https://github.com/shamimice03/terraform-github-actions-test/compare/v0.0.3...v0.0.4) (2023-08-15)
 
 
