@@ -1,20 +1,28 @@
 name: Generate terraform docs
 on:
  push:
- pull_request:
 
 jobs:
-  docs:
+  collectInputs:
+    name: Collect workflow inputs
     runs-on: ubuntu-latest
+    outputs:
+      directories: ${{ steps.dirs.outputs.directories }}
     steps:
-    - uses: actions/checkout@v3
-    #   with:
-    #     ref: ${{ github.event.pull_request.head.ref }}
+      - name: Checkout
+        uses: actions/checkout@v3
 
-    - name: Render terraform docs and push changes back to PR
-      uses: terraform-docs/gh-actions@main
-      with:
-        working-dir: .
-        output-file: README.md
-        output-method: inject
-        git-push: "true"
+      - name: Get root directories
+        id: dirs
+        uses: clowdhaus/terraform-composite-actions/directories@v1.8.3
+        
+  view_output:
+    needs: ["collectInputs"]
+    runs-on: ubuntu-latest
+    env:
+     INPUTS: ${{ needs.collectInputs.outputs.directories}}
+      
+    run: |
+      echo $INPUTS
+     
+
