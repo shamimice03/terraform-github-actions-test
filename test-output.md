@@ -59,17 +59,17 @@ In `README.md` file following line must be added:
 
 > Ref: https://github.com/antonbabenko/pre-commit-terraform#terraform_docs
 
-
-```bash
-pre-commit run -a
-```
-
 #### Target:
+```
+> pre-commit run -a
+
 Terraform fmt............................................................Passed
 Terraform validate.......................................................Passed
 Terraform docs...........................................................Passed
 Terraform validate with tflint...........................................Passed
 check for merge conflicts................................................Passed
+
+```
 
 #### Link: 
 - https://github.com/pre-commit/pre-commit-hooks
