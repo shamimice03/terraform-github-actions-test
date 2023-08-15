@@ -71,7 +71,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_azs"></a> [azs](#input\_azs) | List of AZs | `list(any)` | `[]` | no |
+| <a name="input_azs"></a> [azs](#input\_azs) | List of AZs | `list(any)` | <pre>[<br>  "ap-northeast-1a"<br>]</pre> | no |
 | <a name="input_cidr"></a> [cidr](#input\_cidr) | CIDR Block of the VPC | `string` | `""` | no |
 | <a name="input_db_subnet_cidr"></a> [db\_subnet\_cidr](#input\_db\_subnet\_cidr) | Mapping AZ and DB subnets | `list(any)` | `[]` | no |
 | <a name="input_enable_dns_hostnames"></a> [enable\_dns\_hostnames](#input\_enable\_dns\_hostnames) | Should be true to enable DNS hostnames in the VPC | `bool` | `false` | no |

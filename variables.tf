@@ -39,7 +39,7 @@ variable "enable_single_nat_gateway" {
 variable "azs" {
   description = "List of AZs"
   type        = list(any)
-  default     = []
+  default     = ["ap-northeast-1a"]
 }
 
 variable "public_subnet_cidr" {
