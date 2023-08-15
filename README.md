@@ -1,4 +1,4 @@
-## Create AWS VPC using Terraform
+## Provision AWS VPC using Terraform 
 
 ### Usage
 ```hcl
