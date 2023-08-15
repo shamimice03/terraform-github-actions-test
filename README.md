@@ -21,7 +21,7 @@ module "vpc" {
 
     tags = {
       "Team" = "platform-team"
-      "Env"  = "prod"
+      "Env"  = "prod-1"
     }
 }
 ```
