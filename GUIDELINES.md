@@ -84,6 +84,34 @@ check for merge conflicts................................................Passed
 - `Conventional Commits` 
    - https://www.conventionalcommits.org/en/v1.0.0/
    - https://medium.com/agoda-engineering/automating-versioning-and-releases-using-semantic-release-d16c5672fbe1
+   - https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13
+   
+     <details>
+        <summary> Details </summary>
+            When using `Conventional Commits`, only `type` and `description` are mandatory, while the rest is optional. 
+            The value of type is important and needs to be only one of the following:
+            
+            ```
+            feat: A new feature
+            fix: A bug fix
+            docs: Documentation only changes
+            style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+            refactor: A code change that neither fixes a bug nor adds a feature
+            perf: A code change that improves performance
+            test: Adding missing or correcting existing tests
+            chore: Changes to the build process or auxiliary tools and libraries, such as documentation generation
+            Below are some sample commits made using this specification -
+            ```
+            
+            Exmaples:
+            ```
+            feat(logging): added logs for failed signups
+            fix(homepage): fixed image gallery
+            test(homepage): updated tests
+            docs(readme): added new logging table information
+            ```
+     </details>
+
 - `commit-analyzer` 
    - https://www.npmjs.com/package/@semantic-release/commit-analyzer
    - Example:
