@@ -1,4 +1,6 @@
-name: Generate terraform docs
+# https://github.com/clowdhaus/terraform-composite-actions#directories
+
+name: directories
 on:
  push:
 

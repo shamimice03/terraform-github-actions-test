@@ -1,0 +1,39 @@
+# https://github.com/clowdhaus/terraform-composite-actions#directories
+
+name: minMax
+on:
+ push:
+
+jobs:
+  collectInputs:
+    name: Collect workflow inputs
+    runs-on: ubuntu-latest
+    outputs:
+      directories: ${{ steps.dirs.outputs.directories }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Get root directories
+        id: dirs
+        uses: clowdhaus/terraform-composite-actions/directories@v1.8.3
+
+  preCommitVersions:
+    name: Min TF pre-commit
+    needs: collectInputs
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        directory: ${{ fromJson(needs.collectInputs.outputs.directories) }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Terraform min/max versions
+        id: minMax
+        uses: clowdhaus/terraform-min-max@v1.2.4
+        with:
+          directory: ${{ matrix.directory }}
+    outputs:
+      minVersion: ${{ steps.minMax.outputs.minVersion }}
+      maxVersion: ${{ steps.minMax.outputs.maxVersion }}
