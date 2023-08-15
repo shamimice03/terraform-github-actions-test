@@ -20,7 +20,7 @@ module "vpc" {
     enable_single_nat_gateway = true
 
     tags = {
-      "Team" = "platform-team"
+      "Team" = "platform-team-1"
       "Env"  = "prod-1"
     }
 }
