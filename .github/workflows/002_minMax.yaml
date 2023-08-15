@@ -37,7 +37,7 @@ jobs:
         uses: clowdhaus/terraform-min-max@v1.2.4
         with:
           directory: ${{ matrix.directory }}
-     - name: Outputs
+      - name: Outputs
         run: |
          echo "${{ steps.minMax.outputs.minVersion }}"
          echo "${{ steps.minMax.outputs.maxVersion }}"
