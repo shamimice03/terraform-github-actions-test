@@ -77,7 +77,7 @@ check for merge conflicts................................................Passed
 
 ***
 
-## 005_release.yaml
+## 005_release.yaml and 006_release_v2.yaml
 
 - `releaserc.json` file contains the configurations needed for release.
 - Plugin-list: https://semantic-release.gitbook.io/semantic-release/v/beta/extending/plugins-list
@@ -88,7 +88,7 @@ check for merge conflicts................................................Passed
    
      <details>
         <summary> Details </summary>
-            When using `Conventional Commits`, only `type` and `description` are mandatory, while the rest is optional. 
+            When using `Conventional Commits` , only  `type` and  `description` are mandatory, while the rest is optional. 
             The value of type is important and needs to be only one of the following:
             
             ```

@@ -1,3 +1,6 @@
+# Workshop on terraform-github-actions
+For step-by-step guideline follow `.github/workflow/*` and `GUIDELINES.md`
+
 ## Provision AWS VPC using Terraform 
 
 ### Usage
