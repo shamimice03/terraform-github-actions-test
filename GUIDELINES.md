@@ -74,3 +74,18 @@ check for merge conflicts................................................Passed
 #### Link: 
 - https://github.com/pre-commit/pre-commit-hooks
 - https://github.com/antonbabenko/pre-commit-terraform
+
+***
+
+## 005_release.yaml
+
+- `releaserc.json` file contains the configurations needed for release.
+- `Conventional Commits` 
+   - https://www.conventionalcommits.org/en/v1.0.0/
+   - https://medium.com/agoda-engineering/automating-versioning-and-releases-using-semantic-release-d16c5672fbe1
+- `commit-analyzer` 
+   - https://www.npmjs.com/package/@semantic-release/commit-analyzer
+   - Example:
+      ```bash
+      git commit -m "fix(variable-data): fixed variable default value"
+      ```
