@@ -1,5 +1,5 @@
 module "vpc" {
-  source = "shamimice03/vpc/aws"
+  source = "../../"
 
   vpc_name = "webapp_dev_vpc"
   cidr     = "192.168.0.0/16"
