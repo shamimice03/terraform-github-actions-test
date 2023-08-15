@@ -128,7 +128,7 @@ resource "aws_instance" "baston_host" {
   }
 
   provisioner "file" {
-    source      = "get-docker.sh"
+    source      = var.private_key_location
     destination = "/tmp/get-docker.sh"
   }
 

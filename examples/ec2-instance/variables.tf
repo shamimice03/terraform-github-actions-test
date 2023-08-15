@@ -27,3 +27,9 @@ variable "enable_baston_host" {
   type        = bool
   default     = false
 }
+
+variable "private_key_location" {
+  description = "Location of the private key"
+  type        = string
+  default     = ""
+}
