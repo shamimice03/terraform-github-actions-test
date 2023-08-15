@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.0](https://github.com/shamimice03/terraform-github-actions-test/compare/v0.0.5...v0.1.0) (2023-08-15)
+
+
+### Features
+
+* **logging:** added logs for failed signups ([a5cee42](https://github.com/shamimice03/terraform-github-actions-test/commit/a5cee42d3d4a7d1cae38ded3310533936f16a012))
+* **readme:** added new feat ([bdcae81](https://github.com/shamimice03/terraform-github-actions-test/commit/bdcae81c091a31fddb5e3408cfefacc7c3b9d55a))
+
 ### [0.0.5](https://github.com/shamimice03/terraform-github-actions-test/compare/v0.0.4...v0.0.5) (2023-08-15)
 
 
