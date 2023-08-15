@@ -80,6 +80,7 @@ check for merge conflicts................................................Passed
 ## 005_release.yaml
 
 - `releaserc.json` file contains the configurations needed for release.
+- Plugin-list: https://semantic-release.gitbook.io/semantic-release/v/beta/extending/plugins-list
 - `Conventional Commits` 
    - https://www.conventionalcommits.org/en/v1.0.0/
    - https://medium.com/agoda-engineering/automating-versioning-and-releases-using-semantic-release-d16c5672fbe1
