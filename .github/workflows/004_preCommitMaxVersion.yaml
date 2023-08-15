@@ -28,14 +28,14 @@ jobs:
        steps:
          - name: Checkout
            uses: actions/checkout@v3
-           with:
-             ref: ${{ github.event.pull_request.head.ref }}
-             repository: ${{github.event.pull_request.head.repo.full_name}}
+         #  with:
+         #     ref: ${{ github.event.push.head.ref }}
+         #     repository: ${{github.event.push.head.repo.full_name}}
              
          - name: view
            run: |
-             echo "${{ github.event.push.head.ref }}"
-             echo "${{github.event.push.head.repo.full_name}}"
+             echo "${{ github.ref_name }}"
+             echo "${{ github.repository }}"
    
          - name: Terraform min/max versions
            id: minMax
@@ -47,4 +47,5 @@ jobs:
              terraform-version: ${{ steps.minMax.outputs.maxVersion }}
              tflint-version: ${{ env.TFLINT_VERSION }}
              terraform-docs-version: ${{ env.TERRAFORM_DOCS_VERSION }}
-             install-hcledit: true
+             #install-hcledit: true
+             args: '--files $(ls *.tf)'

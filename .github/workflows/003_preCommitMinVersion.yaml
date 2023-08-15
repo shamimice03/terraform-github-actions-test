@@ -16,7 +16,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      # output: [".", "./examples/ec2-instance"]
+        # output: [".", "./examples/ec2-instance"]
       - name: Get root directories
         id: dirs
         uses: clowdhaus/terraform-composite-actions/directories@v1.8.3
