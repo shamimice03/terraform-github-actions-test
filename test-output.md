@@ -1,3 +1,8 @@
+### pre-commit installation on `amazon-linux`
+```
+
+```
+
 ### 001_directories.yaml
 The clowdhaus/terraform-composite-actions/directories action will return a list of directories that contain a versions.tf, 
 where the presence of a versions.tf file is loosely representative of a Terraform project root directory. 
