@@ -123,12 +123,12 @@ resource "aws_instance" "baston_host" {
 
 
   provisioner "file" {
-    source      = "~/.ssh/aws_access"      # Passing Private-Access key, so that baston_host can ssh to any private_node
+    source      = var.private_key_location      # Passing Private-Access key, so that baston_host can ssh to any private_node
     destination = "/tmp/aws_access"
   }
 
   provisioner "file" {
-    source      = var.private_key_location
+    source      = "get-docker.sh"
     destination = "/tmp/get-docker.sh"
   }
 
@@ -136,7 +136,7 @@ resource "aws_instance" "baston_host" {
     type        = "ssh"
     host        = self.public_ip
     user        = "ec2-user"
-    private_key = file("~/.ssh/aws_access")  # Location of Private-Access key
+    private_key = file(var.private_key_location)  # Location of Private-Access key
     timeout     = "4m"
   }
 
