@@ -34,7 +34,7 @@
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_instance_type"></a> [instance\_type](#input\_instance\_type) | Instance Type | `string` | `"t2.micro"` | no |
+| <a name="input_instance_type"></a> [instance\_type](#input\_instance\_type) | Instance Type | `string` | `"t3.small"` | no |
 | <a name="input_private_key_location"></a> [private\_key\_location](#input\_private\_key\_location) | Location of the private key | `string` | `""` | no |
 
 ## Outputs

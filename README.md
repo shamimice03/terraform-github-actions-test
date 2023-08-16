@@ -75,7 +75,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_azs"></a> [azs](#input\_azs) | List of AZs | `list(any)` | `[]` | no |
-| <a name="input_cidr"></a> [cidr](#input\_cidr) | CIDR Block of the VPC | `string` | `""` | no |
+| <a name="input_cidr"></a> [cidr](#input\_cidr) | CIDR Block of the VPC | `string` | `"10.0.0.0/16"` | no |
 | <a name="input_db_subnet_cidr"></a> [db\_subnet\_cidr](#input\_db\_subnet\_cidr) | Mapping AZ and DB subnets | `list(any)` | `[]` | no |
 | <a name="input_enable_dns_hostnames"></a> [enable\_dns\_hostnames](#input\_enable\_dns\_hostnames) | Should be true to enable DNS hostnames in the VPC | `bool` | `false` | no |
 | <a name="input_enable_dns_support"></a> [enable\_dns\_support](#input\_enable\_dns\_support) | Should be true to enable DNS support in the VPC | `bool` | `true` | no |
@@ -84,7 +84,7 @@ No modules.
 | <a name="input_private_subnet_cidr"></a> [private\_subnet\_cidr](#input\_private\_subnet\_cidr) | Mapping AZ and Private subnets | `list(any)` | `[]` | no |
 | <a name="input_public_subnet_cidr"></a> [public\_subnet\_cidr](#input\_public\_subnet\_cidr) | Mapping AZ and Public subnets | `list(any)` | `[]` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | A map of tags to add to all resources | `map(any)` | `{}` | no |
-| <a name="input_vpc_name"></a> [vpc\_name](#input\_vpc\_name) | Name of the vpc | `string` | `""` | no |
+| <a name="input_vpc_name"></a> [vpc\_name](#input\_vpc\_name) | Name of the vpc | `string` | `"test-vpc-2"` | no |
 
 ## Outputs
 
