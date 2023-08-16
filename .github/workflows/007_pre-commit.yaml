@@ -64,7 +64,7 @@ jobs:
    
   preCommitOnMaxVersion:
      name: pre-commit on max version
-     runs-on: ubuntu-linux
+     runs-on: ubuntu-latest
      needs: collectInputs
      steps: 
      - uses: actions/checkout@v3
