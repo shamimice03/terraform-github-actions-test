@@ -1,14 +1,9 @@
 name: pre-commit
 
 on: 
-  # push:
-  #   branches: 
-  #     - main
-  #   paths-ignore:
-  #       - '**/*.md'
-  # pull_request:
-  #   types:
-  #     - closed
+  pull_request:
+    branches:
+    - main
   workflow_dispatch:
   
   
