@@ -1,7 +1,7 @@
 # Workshop on terraform-github-actions
 For step-by-step guideline follow `.github/workflows/*` and `GUIDELINES.md`
 
-[![pre-commit](https://github.com/shamimice03/terraform-with-github-actions/actions/workflows/008_pre-commit.yaml/badge.svg?branch=main)](https://github.com/shamimice03/terraform-with-github-actions/actions/workflows/008_pre-commit.yaml)
+[![pre-commit](https://github.com/shamimice03/terraform-with-github-actions/actions/workflows/008_pre-commit.yaml/badge.svg?branch=main&event=push)](https://github.com/shamimice03/terraform-with-github-actions/actions/workflows/008_pre-commit.yaml)
 
 ## Provision AWS VPC using Terraform 
 
