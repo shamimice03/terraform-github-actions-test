@@ -1,6 +1,8 @@
 # Workshop on terraform-github-actions
 For step-by-step guideline follow `.github/workflows/*` and `GUIDELINES.md`
 
+[![pre-commit](https://github.com/shamimice03/terraform-with-github-actions/actions/workflows/008_pre-commit.yaml/badge.svg?branch=main)](https://github.com/shamimice03/terraform-with-github-actions/actions/workflows/008_pre-commit.yaml)
+
 ## Provision AWS VPC using Terraform 
 
 ### Usage
@@ -41,7 +43,7 @@ module "vpc" {
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.12.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.13.1 |
 
 ## Modules
 
