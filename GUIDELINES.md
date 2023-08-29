@@ -1,4 +1,6 @@
 ## pre-commit installation on `amazon-linux`
+
+- Python Installation guide - [ubuntu](https://phoenixnap.com/kb/how-to-install-python-3-ubuntu)
 ```bash
 # check version - must be python3 
  python -V
